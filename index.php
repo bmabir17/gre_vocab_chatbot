@@ -12,17 +12,17 @@ if ($hub_verify_token === $verify_token) {
 	 */
 
 	//check if the message contains the following keywords
-	if(preg_match('[get|started hi|there]', strtolower($message))) {
+	if(preg_match('[get|hi there|started]', strtolower($message))) {
 
 	    // Make request to Time API
 	    ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
 	    //$result = file_get_contents("http://www.timeapi.org/utc/now?format=%25a%20%25b%20%25d%20%25I:%25M:%25S%20%25Y");
-	    $result="Hi this GRE Vocabulary Bot Powered By BluespereIt. Please Respond by saying vocab to learn new GRE Vocab everyday";
+	    $result="Hi!! this is GRE Vocabulary Bot Powered By BluespereIt. Please Respond by saying vocab to learn new GRE Vocab everyday";
 	    if($result != '') {
 	        $message_to_reply = $result;
 	    }
 	} else {
-	    $message_to_reply = 'Huh! what do you mean?';
+	    $message_to_reply = 'I did not understood what you meant, A human will be notified to answer your quaries';
 	}
 	//print $message_to_reply;
 

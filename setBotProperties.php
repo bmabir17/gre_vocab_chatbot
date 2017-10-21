@@ -8,8 +8,59 @@
 	//The JSON data
 	$jsonData='{ 
 	  "get_started":{
-	    "payload":"get started" 
-	  }
+	    "payload":"get started"
+	  },
+	  "persistent_menu":[
+						  {
+						    "locale":"default",
+						    "composer_input_disabled": true,
+						    "call_to_actions":[
+											      {
+											        "title":"My Settings",
+											        "type":"nested",
+											        "call_to_actions":[
+																          {
+																            "title":"Learn Vocabulary",
+																            "type":"nested",
+																            "call_to_actions":[
+																            	{
+																            		"title":"start learning",
+																	            	"type":"postback",
+																	            	"payload":"teach me"
+																            	},
+																            	{
+																            		"title":"stop learning",
+																	            	"type":"postback",
+																	            	"payload":"not now"
+																            	}
+																            ]
+																            
+																          },
+																          {
+																            "title":"My points",
+																            "type":"postback",
+																            "payload":"my points"
+																          },
+																          {
+																            "title":"Contact a human",
+																            "type":"postback",
+																            "payload":"contact a human"
+																          }
+																        ]
+											      },
+											      {
+											        "type":"web_url",
+											        "title":"My Learned Vocabulary Lists",
+											        "url":"https://gre-chatbot.herokuapp.com/myVocabList.php",
+											        "webview_height_ratio":"full"
+											      }
+											    ]
+						  },
+						  {
+						    "locale":"zh_CN",
+						    "composer_input_disabled":false
+						  }
+						]
 	}';
 
 	//Encode the array into JSON.
