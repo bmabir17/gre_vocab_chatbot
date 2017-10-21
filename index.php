@@ -1,5 +1,5 @@
 <?php 
-$access_token = "EAAPUl7Rs7S0BAGZAKbBTvWqyepEZCmsK8HLQ7xBEFfyGmAWkSnxSQ8quSBZCVfJL40t4NFnRiaWucPMDX8euHyQzl0osy9lirc9e3sjJdiF0EdF24Rh7vWVl075Bu2WkByfUdA4rbUy0bLr82ZB6OWJ7uwZC7KZARmQFsZCuajRkAZDZD";
+include 'env.php';
 $verify_token = "gre_vocab";
 $hub_verify_token = null;
 //Start of Verification
