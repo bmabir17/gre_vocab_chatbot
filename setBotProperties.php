@@ -1,7 +1,7 @@
 <?php 
 	include 'env.php';
 	//API Url
-	$url='https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
+	$url='https://graph.facebook.com/v2.6/me/messenger_profile?access_token='.$access_token;
 	//Initiate cURL
 	$ch=curl_init($url);
 
