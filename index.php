@@ -52,7 +52,7 @@ if ($hub_verify_token === $verify_token) {
 			"id":"'.$sender.'"
 		},
 		"message":{
-			"text":"'.$message_to_reply.'"
+			"text":"'.$message_to_reply.'",
 			"quick_replies":[
 				{
 					"content_type":"text",
@@ -62,8 +62,8 @@ if ($hub_verify_token === $verify_token) {
 				},
 				{
 					"content_type":"text",
-					"title":"A",
-					"payload":"A",
+					"title":"B",
+					"payload":"B",
 
 				}
 
