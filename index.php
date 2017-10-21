@@ -53,6 +53,21 @@ if ($hub_verify_token === $verify_token) {
 		},
 		"message":{
 			"text":"'.$message_to_reply.'"
+			"quick_replies":[
+				{
+					"content_type":"text",
+					"title":"A",
+					"payload":"A",
+
+				},
+				{
+					"content_type":"text",
+					"title":"A",
+					"payload":"A",
+
+				}
+
+			]
 		}
 	}';
 
