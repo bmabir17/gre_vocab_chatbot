@@ -12,12 +12,12 @@ if ($hub_verify_token === $verify_token) {
 	 */
 
 	//check if the message contains the following keywords
-	if(preg_match('[time|current time|now]', strtolower($message))) {
+	if(preg_match('[get|started hi|there]', strtolower($message))) {
 
 	    // Make request to Time API
 	    ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
 	    //$result = file_get_contents("http://www.timeapi.org/utc/now?format=%25a%20%25b%20%25d%20%25I:%25M:%25S%20%25Y");
-	    $result="Hi, This is GreVocabBot";
+	    $result="Hi this GRE Vocabulary Bot Powered By BluespereIt. Please Respond by saying vocab to learn new GRE Vocab everyday";
 	    if($result != '') {
 	        $message_to_reply = $result;
 	    }
@@ -44,14 +44,14 @@ if ($hub_verify_token === $verify_token) {
 			"quick_replies":[
 				{
 					"content_type":"text",
-					"title":"A",
-					"payload":"A",
+					"title":"yes, teach me!",
+					"payload":"teach me",
 
 				},
 				{
 					"content_type":"text",
-					"title":"B",
-					"payload":"B",
+					"title":"Not now bro",
+					"payload":"not now",
 
 				}
 

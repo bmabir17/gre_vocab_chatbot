@@ -8,7 +8,7 @@
 	//The JSON data
 	$jsonData='{ 
 	  "get_started":{
-	    "payload":"Hi this GRE Vocabulary Bot Powered By BluespereIt. Please Respond by saying vocab to learn new GRE Vocab everyday" 
+	    "payload":"get started" 
 	  }
 	}';
 
