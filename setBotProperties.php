@@ -8,7 +8,7 @@
 	//The JSON data
 	$jsonData='{ 
 	  "get_started":{
-	    "payload":"get started"
+	    "payload":"hi there"
 	  },
 	  "persistent_menu":[
 						  {
