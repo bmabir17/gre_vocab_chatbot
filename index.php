@@ -12,7 +12,7 @@ if ($hub_verify_token === $verify_token) {
 	 */
 
 	//check if the message contains the following keywords
-	if(preg_match('[get|hi there|started]', strtolower($message))) {
+	if(preg_match('[Get|hi there|Started]', strtolower($message))) {
 
 	    // Make request to Time API
 	    ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0)');
